@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet">
+
+    <title>Devchallenges</title>
+
+    <style>
+      *{
+        padding:0px;
+        margin:0px;
+        line-height: 120%;
+      }
+      body{
+        padding:10em;
+        padding-top:5em;
+        padding-right:11em;
+      }
+      section{
+        display: flex;
+        justify-content: space-between;
+      }
+      section > p{
+        font-family: 'PT Serif';
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: -0.045em;
+        width:50%;
+      }
+      section div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        width:45%;
+      }
+      section div p:nth-of-type(1){
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      section div p:nth-of-type(2){
+        font-weight: 400;
+        margin-top: 2em;
+      }
+      .image{
+        min-height: 100%;
+      }
+      .image img{
+        min-height: 100%;
+        max-width: 80%;
+        padding-bottom:0.5em;
+        padding-right: 0.5em;
+      }
+      .imageWrapper{
+        display: flex;
+
+      }
+      main{
+        margin-top:10em;
+        display:  grid;
+        gap: 5em 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .imageWrapper p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        text-transform: uppercase;
+        font-family: 'PT Serif', serif;
+        font-weight:400;
+        font-size: 14px;
+      }
+      figcaption{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .image:nth-child(3n-1){
+        margin-top:5em;
+
+      }
+      .devName{
+        position: absolute;
+        right:20px;
+      }
+            @media (max-width:900px){
+              body{
+                padding:1em;
+                padding-top:5em;
+              }
+        section{
+          flex-direction: column;
+        }
+        section p, section div {
+          width:100%;
+        }
+        section div{
+          margin-top:3em;
+        }
+        section div p:nth-of-type(2){
+          margin-top:1em;
+        }
+        main{
+          margin-top:4em;
+              grid-template-columns: 1fr 1fr ;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <p> The creative crew</p>
+      <div>
+        <p>Who we are</p>
+        <p>We are a team of creatively diverse, driven, innovative individuals working in various locations from the world.</p>
+      </div>
+    </section>
+    <main>
+      <div class="image">
+        <div class="imageWrapper">
+        <img src="photo1.png">
+        <p>product owner</p>
+        </div>
+        <figcaption>Bill Mahoney</figcaption>
+      </div>
+
+      <div class="image">
+        <div class="imageWrapper">
+          <img src="photo2.png">
+          <p>art director</p>
+        </div>
+        <figcaption>Saba Cabrera</figcaption>
+      </div>
+
+      <div class="image">
+        <div class="imageWrapper">
+          <img src="photo3.png">
+          <p>tech lead</p>
+        </div>
+        <figcaption>Shae Lee</figcaption>
+      </div>
+
+      <div class="image">
+        <div class="imageWrapper">
+          <img src="photo4.png">
+          <p>UX designer</p>
+        </div>
+        <figcaption>Skylah Lu</figcaption>
+      </div>
+
+      <div class="image">
+        <div class="imageWrapper">
+          <img src="photo5.png">
+          <p>developer</p>
+        </div>
+        <figcaption>Griff Richards</figcaption>
+      </div>
+
+      <div class="image">
+        <div class="imageWrapper">
+          <img src="photo6.png">
+          <p>developer</p>
+        </div>
+        <figcaption>Stan John</figcaption>
+      </div>
+
+    </main>
+      <p class="devName">Coded by Pascu Ioana-Georgia</p>
+  </body>
+</html>
